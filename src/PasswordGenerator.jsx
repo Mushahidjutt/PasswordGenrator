@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactSwitch from "react-switch";
 
 const PasswordGenerator = () => {
-  const [length, setLength] = useState(8);
+  const [length, setLength] = useState();
   const [useUppercase, setUseUppercase] = useState(true);
   const [useNumbers, setUseNumbers] = useState(true);
   const [useSpecial, setUseSpecial] = useState(true);
