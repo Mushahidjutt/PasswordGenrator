@@ -9,10 +9,18 @@ const [name, setName] = useState('');
     const [count,setcount] = useState(0);
     const [user,setuser]= useState ([]);
 
+  
+    
+
     useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => res.json())
       .then(data => setuser(data));
+      
+      
+
+      // console.log(data);
+      
   }, []); 
 
 
@@ -23,7 +31,7 @@ const [name, setName] = useState('');
 
     <div>Counter  {count}
 
-    <ul>{user.map(user=> <li key={user.id}>{user.name}</li>)}</ul>
+    <ul>{user.map(user=> <li key={user.id}>Name:  {user.name}</li>)}</ul>
                   
         <div>  <button onClick={()=>setcount(count+1)}> +</button> </div>
         <div>  <button onClick={()=>setcount(count-1*2)}> -</button> </div>
