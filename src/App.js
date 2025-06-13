@@ -13,11 +13,18 @@ function App() {
 
         <div>
           {/* Navigation Links (optional) */}
-          <nav>
-            <Link to="/WeatherCard">Weather</Link> |
-            <Link to="/PasswordGenerator">PasswordGenerator</Link> |
-            <Link to="/todo">Todo</Link> |
-            <Link to="/Quiz">Quiz </Link>
+          <nav className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg text-white px-6 py-4">
+          <div className="container mx-auto flex justify-between items-center"> 
+          <h1 className="text-2xl font-bold">Mushahid Buttar</h1>
+          <ul className="flex space-x-6 text-lg">
+
+           <li className="hover:text-yellow-300 transition duration-300 cursor-pointer"> <Link to="/WeatherCard">Weather</Link> </li> 
+            <li className="hover:text-yellow-300 transition duration-300 cursor-pointer"> <Link to="/PasswordGenerator">PasswordGenerator</Link> </li> 
+            <li className="hover:text-yellow-300 transition duration-300 cursor-pointer"> <Link to="/todo">Todo</Link> </li>
+            <li className="hover:text-yellow-300 transition duration-300 cursor-pointer"> <Link to="/Quiz">Quiz </Link>  </li>
+
+            </ul>
+            </div>
           </nav>
 
           <Routes>
@@ -57,7 +64,7 @@ function App() {
             />
 
             <Route
-             path="/" element={<div className="font-bold bg-red-300">Welcome! Choose an app.</div>} />
+             path="/" element={<div className="font-bold bg-slate-100 text-center py-3">Welcome! Portfolio  Choose an app.</div>} />
           </Routes>
 
         </div>
