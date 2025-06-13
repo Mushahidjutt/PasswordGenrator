@@ -36,7 +36,10 @@ const WeatherCard = () => {
   }, [city, search]);
 
   return (
+
+    
     <div className="bg-gradient-to-t from-cyan-500 to-blue-400 mt-10 p-2 w-[400px] h-[360px] pt-4 rounded-2xl">
+      
       <div className="flex flex-row justify-between items-center bg-white pl-2 pr-2 rounded-2xl mt-4">
         <input
           type="text"
